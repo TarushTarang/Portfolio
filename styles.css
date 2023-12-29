@@ -1,0 +1,121 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+header {
+    background-color: #21252a;
+    color: #fefbfb;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+#nav_bar {
+    display: flex;
+    justify-content: space-between;
+    width: var(--site-width);
+    align-items: center;
+    min-height: 2rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+ #p1 {
+    padding-left: 50px ;
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 450;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+}
+
+.nav1 li {
+    display: list-item;
+    text-align:center;
+    list-style-type: none;
+}
+
+.nav1 li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#nev_logo {
+    display: flex;
+    padding: 10px;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0.5rem;
+    background-color: #fff;
+    width: 7rem;
+    border-radius: 20px;
+}
+
+#p2 {
+    display: flex; 
+    margin: 0px;
+}
+
+#p3 {
+    margin-left: 2rem;
+}
+
+#pic1 {
+    height: fit-content;
+    width: 46rem;
+}
+
+#gret1 {
+    color: #fff;
+    font-size: 3.6rem;
+    font-weight: 400;
+    padding-top: 3rem;
+    margin-bottom: 0px;
+}
+
+#p2 h1 {
+    color: #fff;
+    font-size: 63px;
+    font-weight: 490;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#gret2 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 200;
+    
+}
+
+#resume1 {
+    display: flex;
+    padding: 10px;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    background-color: #fff;
+    width: 7rem;
+    border-radius: 20px;
+}
+
+#resume2 {
+    padding: 0px;
+    margin-left: 20px;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+}
