@@ -119,3 +119,33 @@ header {
     color: #000000;
     text-decoration: none;
 }
+
+#abo1 {
+    display: flex;
+    color: #fff;
+    font-size: 3.6rem;
+    padding-left: 7rem;
+    padding-top: 5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#abo2 {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 7rem;
+}
+
+#abo3 {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 7rem;
+    padding-right: 20rem;
+}
+
+#pic2 {
+    width: 26rem;
+    margin: 6rem;
+}
