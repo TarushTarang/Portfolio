@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarush Tarang</title>
+    <!-- Import League Spartan and Materialize CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        /* Internal CSS for customization */
+        body {
+            background-color: #000; /* Black background color for the webpage */
+            color: white; /* White text color for the webpage */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .nav-wrapper {
+            background-color: #424242; /* Dark gray color for the navbar */
+        }
+        .nav-wrapper a.brand-logo,
+        .nav-wrapper ul.right li a,
+        .sidenav li a {
+            color: white; /* White font color for the navbar links */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .brand-logo {
+            padding-left: 20px; /* Adding left padding to the logo */
+            padding-right: 20px; /* Adding right padding to the logo */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .nav-wrapper .right {
+            display: flex;
+            align-items: center;
+        }
+        .sidenav {
+            background-color: #757575; /* Gray background color for the side navigation menu */
+        }
+        .home-content {
+            display: flex;
+            flex-direction: column; /* Display columns on smaller screens */
+            align-items: center; /* Center align content */
+            padding: 20px; /* Padding for the content */
+        }
+        .profile-photo {
+            max-width: 30%; /* Limit maximum width of the photo to 30% of the container width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make the photo circular */
+            margin-bottom: 20px; /* Bottom margin for spacing */
+        }
+        .resume-button, .skills-button {
+            display: inline-block;
+            background-color: #03a9f4; /* Materialize blue */
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px; /* Top margin for spacing */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .resume-button:hover, .skills-button:hover {
+            background-color: #0288d1; /* Darker shade on hover */
+        }
+        .about-me-section {
+            height: 100vh; /* 100% of the viewport height */
+            background-color: #000; /* Black background color for the about me section */
+            text-align: center; /* Center align text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Padding for the section */
+            font-size: 2rem; /* Larger font size for the section */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .about-me-title {
+            font-size: 3rem; /* Larger font size for the title */
+            margin-bottom: 20px; /* Bottom margin for spacing */
+            color: #fff; /* White text color */
+            text-decoration: underline; /* Underline decoration for the title */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .about-me-content {
+            font-size: 1.4rem; /* Larger font size for the content */
+            line-height: 1.6; /* Increased line height for readability */
+            color: #ddd; /* Light gray text color */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .skills-section {
+            background-color: #000; /* Black background color for the skills section */
+            padding: 50px 20px; /* Padding for the section */
+            text-align: center; /* Center align text */
+            color: #fff; /* White text color */
+            font-family: 'League Spartan', sans-serif; /* League Spartan font */
+        }
+        .skills-title {
+            font-size: 3rem; /* Larger font size for the title */
+            margin-bottom: 20px; /* Bottom margin for spacing */
+            text-decoration: underline; /* Underline decoration for the title */
+        }
+        .skill-item {
+            margin-bottom: 20px; /* Bottom margin for each skill item */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .skill-name {
+            font-size: 1.8rem; /* Font size for skill name */
+        }
+        .skill-bar {
+            height: 20px; /* Height of the skill bar */
+            background-color: #757575; /* Gray background color for the skill bar */
+            border-radius: 10px; /* Rounded corners */
+            position: relative;
+            overflow: hidden;
+            width: 60%; /* Width of the skill bar container */
+        }
+        .skill-progress {
+            height: 100%; /* Full height of the skill bar */
+            background-color: #053e88; /* Dark red color for the skill progress */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="padding-left: 20px;">Tarush Tarang</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Navigation for Mobile -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="home-content" id="home">
+            <img src="your-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <h3>HI THERE!</h3>
+            <h3>I'M TARUSH TARANG</h3>
+            <p>Eager, aspiring software engineer ready to apply skills in a practical work environment, looking for opportunities to make a positive impact.</p>
+            <a href="#resume" class="resume-button">Resume</a>
+        </div>
+
+        <!-- About Me Section -->
+        <section class="about-me-section" id="about">
+            <div class="container">
+                <h2 class="about-me-title">About Me</h2>
+                <div class="about-me-content">
+                    <p>Hello, I'm Tarush Tarang from Bihar. 🌟 My journey into coding started with a fascination for games and exploring the internet. Curiosity led me to the world of computer languages. Today, I present my first HTML project in my ever-growing portfolio. Cheers to the exciting coding journey ahead! 🚀</p>
+                    <p>I'm currently immersed in my bachelor's degree in Computer Science and Engineering at Siksha O Anusandhan, fueled by curiosity and a passion for technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <h2 class="skills-title">Skills</h2>
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;"></div>
+                    </div>
+                </div>
