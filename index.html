@@ -39,6 +39,7 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
+            height: 100vh; /* Full viewport height */
         }
         .profile-photo {
             max-width: 27%; /* Set a fixed maximum width */
@@ -58,38 +59,38 @@
         .resume-button:hover, .skills-button:hover {
             background-color: #0288d1;
         }
-        .about-me-section {
-            height: 100vh;
+        .section-container {
             background-color: #000;
+            color: #fff;
+            padding: 20px;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-            font-size: 2rem;
+            height: 100vh; /* Full viewport height */
         }
-        .about-me-title {
+        .section-title {
             font-size: 3rem;
             margin-bottom: 20px;
             color: #fff;
             text-decoration: underline;
         }
-        .about-me-content {
-            font-size: 1.4rem;
-            line-height: 1.6;
+        .section-content {
+            font-size: 1.6rem;
+            line-height: 1.8;
             color: #ddd;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
         }
-        .skills-section {
-            background-color: #000;
-            padding: 50px 20px;
-            text-align: center;
-            color: #fff;
-        }
-        .skills-title {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-decoration: underline;
+        .skills-section .skill-item {
+            width: 100%; /* Ensure skills items take full width */
         }
         .skill-item {
             margin-bottom: 20px;
@@ -173,20 +174,18 @@
             </div>
 
             <!-- About Me Section -->
-            <section class="about-me-section" id="about">
-                <div class="container">
-                    <h2 class="about-me-title">About Me</h2>
-                    <div class="about-me-content">
-                        <p>Hello, I'm Tarush Tarang from Bihar. 🌟 My journey into coding started with a fascination for games and exploring the internet. Curiosity led me to the world of computer languages. Today, I present my first HTML project in my ever-growing portfolio. Cheers to the exciting coding journey ahead! 🚀</p>
-                        <p>I'm currently immersed in my bachelor's degree in Computer Science and Engineering at Siksha O Anusandhan, fueled by curiosity and a passion for technology.</p>
-                    </div>
+            <section class="section-container" id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content">
+                    <p>Hello, I'm Tarush Tarang from Bihar. 🌟 My journey into coding started with a fascination for games and exploring the internet. Curiosity led me to the world of computer languages. Today, I present my first HTML project in my ever-growing portfolio. Cheers to the exciting coding journey ahead! 🚀</p>
+                    <p>I'm currently immersed in my bachelor's degree in Computer Science and Engineering at Siksha O Anusandhan, fueled by curiosity and a passion for technology.</p>
                 </div>
             </section>
 
             <!-- Skills Section -->
-            <section class="skills-section" id="skills">
+            <section class="section-container" id="skills">
+                <h2 class="section-title">Skills</h2>
                 <div class="container">
-                    <h2 class="skills-title">Skills</h2>
                     <div class="skill-item">
                         <span class="skill-name">Python</span>
                         <div class="skill-bar">
@@ -211,6 +210,16 @@
                             <div class="skill-progress" style="width: 40%;"></div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Contact Me Section -->
+            <section class="section-container" id="contact">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-content">
+                    <p>Phone: +91 7277119008</p>
+                    <p>Email: tarushtarang@gmail.com</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/tarush-tarang" target="_blank">Tarush Tarang</a></p>
                 </div>
             </section>
         </div>
