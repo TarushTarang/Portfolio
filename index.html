@@ -113,6 +113,30 @@
             height: 100%;
             background-color: #03a9f4;
         }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info p {
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #03a9f4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #0288d1;
+        }
         /* Back to Top Button */
         .back-to-top {
             position: fixed;
@@ -169,7 +193,7 @@
                 <img src="your-photo.jpg" alt="Profile Photo of Tarush Tarang" class="profile-photo">
                 <h3>HI THERE!</h3>
                 <h3>I'M TARUSH TARANG</h3>
-                <p>Eager, aspiring software engineer ready to apply skills in a practical work environment, looking for opportunities to make a positive impact.</p>
+                <h6>Eager, aspiring software engineer ready to apply skills in a practical work environment, looking for opportunities to make a positive impact.</h6>
                 <a href="#resume" class="resume-button">Resume</a>
             </div>
 
@@ -216,10 +240,11 @@
             <!-- Contact Me Section -->
             <section class="section-container" id="contact">
                 <h2 class="section-title">Contact Me</h2>
-                <div class="section-content">
-                    <p>Phone: +91 7277119008</p>
-                    <p>Email: tarushtarang@gmail.com</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/tarush-tarang" target="_blank">Tarush Tarang</a></p>
+                <div class="section-content contact-info">
+                    <p>Feel free to reach out! Here are my contact details:</p>
+                    <p><strong>Phone:</strong> +91 7277119008</p>
+                    <p><strong>Email:</strong> <a href="mailto:tarushtarang@gmail.com">tarushtarang@gmail.com</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tarushtarang" target="_blank">Tarush Tarang</a></p>
                 </div>
             </section>
         </div>
